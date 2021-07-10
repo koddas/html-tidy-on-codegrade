@@ -1,0 +1,28 @@
+// HTML Tidy config file
+
+// Data validation/linting options
+output-xml: no
+input-xml: no
+numeric-entities: yes
+quote-marks: yes
+quote-nbsp: yes
+quote-ampersand: no
+break-before-br: no
+uppercase-tags: no
+uppercase-attributes: no
+
+// Diagostics options
+
+// Pretty printing options
+indent: auto
+indent-spaces: 2
+markup: yes
+wrap: 72
+
+// Encoding options
+char-encoding: utf8
+newline: lf
+
+// Misc options
+force-output: yes
+tidy-mark: no
