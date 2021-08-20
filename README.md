@@ -5,7 +5,7 @@ A simple wrapper for running HTML Tidy on CodeGrade.
 
 ## Installing and running on CodeGrade
 
-Simply upload the files (*config.sh*, *install-tidy.sh*, *tidy.py*, and *config.txt*) as fixtures. Set *Global setup script* to *$FIXTURES/setup.sh*. Then, under your auto test, add a **Code Quality** block. Choose a **custom** linter and set *Custom program* to *$FIXTURES/tidy.py* and set up deduction scores as you wish. HTML Tidy, and hence the tool will only output errors and warnings, but is pretty lax with what it considers to be an error (I would've been far less lenient when grading myself).
+Simply upload the files (*setup.sh*, *install-tidy.sh*, *tidy.py*, and *config.txt*) as fixtures. Set *Global setup script* to *$FIXTURES/setup.sh*. Then, under your auto test, add a **Code Quality** block. Choose a **custom** linter and set *Custom program* to *$FIXTURES/tidy.py* and set up deduction scores as you wish. HTML Tidy will only output errors and warnings, but is pretty lax with what it considers to be an error (I would've been far less lenient when grading myself), and treats most errors as warnings.
 
 The tool will check all submitted HTML files, as long as the students don't submit anything in subdirectories. There is also a config file, *config.txt*, which you can tweak. You'll find its [documentation here](http://api.html-tidy.org/tidy/quickref_5.0.0.html).
 
