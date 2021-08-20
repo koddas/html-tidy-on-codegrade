@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Check https://github.com/htacg/tidy-html5/releases for the latest release
-TIDY_VERSION=5.7.28
+TIDY_VERSION=5.8.0
 
 set -e
 
